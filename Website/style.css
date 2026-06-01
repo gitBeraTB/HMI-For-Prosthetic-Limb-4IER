@@ -420,6 +420,7 @@ img {
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    text-align: center;
 }
 
 .about-card::before {

@@ -19,8 +19,7 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#hero" class="nav-logo">
-                <span class="logo-icon">⚡</span>
-                <span class="logo-text">4IER</span>
+                <img src="logo.png" alt="4IER Logo" style="height: 32px; width: auto;">
             </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -61,12 +60,7 @@
                 </a>
             </div>
         </div>
-        <div class="hero-visual animate-on-scroll">
-            <div class="hero-image-wrapper">
-                <img src="HMI_4IER_image.png" alt="4IER HMI System" class="hero-image" id="hero-image">
-                <div class="image-glow"></div>
-            </div>
-        </div>
+
         <div class="hero-scroll-indicator">
             <div class="scroll-arrow"></div>
         </div>
@@ -96,7 +90,7 @@
                     <p>Complete end-to-end system delay under 50ms</p>
                 </div>
                 <div class="about-card animate-on-scroll" style="--delay: 0.4s">
-                    <div class="card-icon">🔒</div>
+                    <div class="card-icon">🏥</div>
                     <h3>Medical Safety</h3>
                     <p>IEC 60601-1 BF compliant with leakage current below 10 pA through fully isolated battery-powered nodes.</p>
                 </div>
@@ -115,7 +109,7 @@
                 <div class="pipeline-node">
                     <div class="node-number">01</div>
                     <div class="node-icon">📡</div>
-                    <h3>Transmitter</h3>
+                    <h3>Analog Circuit</h3>
                     <p class="node-chip">ESP32-S3</p>
                     <ul>
                         <li>3-ch sEMG Acquisition</li>
@@ -131,7 +125,7 @@
                 <div class="pipeline-node">
                     <div class="node-number">02</div>
                     <div class="node-icon">📶</div>
-                    <h3>Receiver</h3>
+                    <h3>Signal Processing & Transmission</h3>
                     <p class="node-chip">ESP32</p>
                     <ul>
                         <li>ESP-NOW Frame Capture</li>
@@ -146,7 +140,7 @@
                 <div class="pipeline-node">
                     <div class="node-number">03</div>
                     <div class="node-icon">🦾</div>
-                    <h3>Controller</h3>
+                    <h3>Control Unit</h3>
                     <p class="node-chip">STM32</p>
                     <ul>
                         <li>UART Command Parsing</li>
@@ -168,33 +162,33 @@
             <div class="features-grid">
                 <div class="feature-card animate-on-scroll" style="--delay: 0.1s">
                     <div class="feature-number">01</div>
-                    <h3>TinyML on Edge</h3>
-                    <p>Random Forest classifier deployed as a C++ header file, executing inference in under 0.4 ms directly on the ESP32-S3 microcontroller.</p>
+                    <h3>Smart AI on Device</h3>
+                    <p>The system uses a built-in artificial intelligence model to instantly recognize muscle movements right on the device.</p>
                 </div>
                 <div class="feature-card animate-on-scroll" style="--delay: 0.15s">
                     <div class="feature-number">02</div>
-                    <h3>Advanced DSP Pipeline</h3>
-                    <p>50 Hz IIR Notch filter removes power-line interference, followed by a 10-tap FIR moving average for signal smoothing.</p>
+                    <h3>Clear Signal Quality</h3>
+                    <p>It automatically cleans up electrical noise and interference, ensuring that only true muscle signals are captured.</p>
                 </div>
                 <div class="feature-card animate-on-scroll" style="--delay: 0.2s">
                     <div class="feature-number">03</div>
-                    <h3>18-Feature Extraction</h3>
-                    <p>Sliding window generates RMS, MAV, Waveform Length, Zero-Crossing Rate, SSC, and statistical features every 12.5 ms.</p>
+                    <h3>Detailed Movement Analysis</h3>
+                    <p>By continuously analyzing multiple patterns in the muscle signals, it accurately detects exactly what movement you intend to make.</p>
                 </div>
                 <div class="feature-card animate-on-scroll" style="--delay: 0.25s">
                     <div class="feature-number">04</div>
-                    <h3>ESP-NOW Protocol</h3>
-                    <p>Bypasses traditional Bluetooth stack for sub-5ms round-trip wireless communication between nodes.</p>
+                    <h3>Instant Wireless Connection</h3>
+                    <p>A high-speed wireless connection ensures the robotic arm reacts to your thoughts without any noticeable delay.</p>
                 </div>
                 <div class="feature-card animate-on-scroll" style="--delay: 0.3s">
                     <div class="feature-number">05</div>
-                    <h3>Live GUI Plotter</h3>
-                    <p>PyQtGraph real-time visualization with keyboard-driven dataset labeling for efficient data collection workflows.</p>
+                    <h3>Live Monitoring</h3>
+                    <p>Comes with an easy-to-use computer program that lets users and doctors see their muscle activity in real-time.</p>
                 </div>
                 <div class="feature-card animate-on-scroll" style="--delay: 0.35s">
                     <div class="feature-number">06</div>
-                    <h3>Automated ML Pipeline</h3>
-                    <p>Google Colab script with SMOTE balancing and GridSearchCV exports optimized models directly as C++ firmware headers.</p>
+                    <h3>Easily Trainable</h3>
+                    <p>The system can quickly learn new muscle patterns, making it highly adaptable for different users and needs.</p>
                 </div>
             </div>
         </div>

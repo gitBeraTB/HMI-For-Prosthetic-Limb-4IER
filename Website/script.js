@@ -37,7 +37,7 @@ class Particle {
     draw() {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(108, 92, 231, ${this.opacity})`;
+        ctx.fillStyle = `rgba(96, 165, 250, ${this.opacity})`;
         ctx.fill();
     }
 }
@@ -60,7 +60,7 @@ function drawConnections() {
                 ctx.beginPath();
                 ctx.moveTo(particles[i].x, particles[i].y);
                 ctx.lineTo(particles[j].x, particles[j].y);
-                ctx.strokeStyle = `rgba(108, 92, 231, ${0.08 * (1 - dist / 150)})`;
+                ctx.strokeStyle = `rgba(197, 168, 128, ${0.08 * (1 - dist / 150)})`;
                 ctx.lineWidth = 0.5;
                 ctx.stroke();
             }
@@ -200,7 +200,7 @@ if (heroImage) {
             <div style="
                 width: 100%;
                 height: 400px;
-                background: linear-gradient(135deg, rgba(108,92,231,0.2), rgba(0,210,255,0.1));
+                background: linear-gradient(135deg, rgba(197,168,128,0.2), rgba(96,165,250,0.1));
                 border-radius: 24px;
                 display: flex;
                 align-items: center;

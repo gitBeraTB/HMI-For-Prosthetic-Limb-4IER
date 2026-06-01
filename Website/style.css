@@ -4,26 +4,26 @@
 
 /* --- CSS Variables --- */
 :root {
-    --bg-primary: #050218;
-    --bg-secondary: #0a0530;
-    --bg-card: rgba(15, 10, 60, 0.6);
-    --bg-card-hover: rgba(25, 18, 80, 0.8);
-    --text-primary: #e8e6f0;
-    --text-secondary: #9b97b0;
-    --text-muted: #6b6580;
-    --accent-1: #6c5ce7;
-    --accent-2: #a855f7;
-    --accent-3: #00d2ff;
-    --gradient-main: linear-gradient(135deg, #6c5ce7, #a855f7, #00d2ff);
-    --gradient-card: linear-gradient(135deg, rgba(108,92,231,0.15), rgba(168,85,247,0.05));
-    --border-color: rgba(108, 92, 231, 0.2);
-    --border-glow: rgba(108, 92, 231, 0.5);
+    --bg-primary: #0b0f19;
+    --bg-secondary: #111827;
+    --bg-card: rgba(31, 41, 55, 0.4);
+    --bg-card-hover: rgba(31, 41, 55, 0.75);
+    --text-primary: #f3f4f6;
+    --text-secondary: #9ca3af;
+    --text-muted: #6b7280;
+    --accent-1: #c5a880; /* Premium Champagne Gold */
+    --accent-2: #38bdf8; /* Medical Sky Blue */
+    --accent-3: #f59e0b; /* Warm Amber */
+    --gradient-main: linear-gradient(135deg, #c5a880, #60a5fa, #38bdf8);
+    --gradient-card: linear-gradient(135deg, rgba(197, 168, 128, 0.1), rgba(96, 165, 250, 0.05));
+    --border-color: rgba(197, 168, 128, 0.15);
+    --border-glow: rgba(96, 165, 250, 0.35);
     --radius-sm: 8px;
     --radius-md: 16px;
     --radius-lg: 24px;
     --radius-xl: 32px;
-    --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.3);
-    --shadow-glow: 0 0 40px rgba(108, 92, 231, 0.15);
+    --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
+    --shadow-glow: 0 0 40px rgba(96, 165, 250, 0.08);
     --font-main: 'Inter', -apple-system, sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
     --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);

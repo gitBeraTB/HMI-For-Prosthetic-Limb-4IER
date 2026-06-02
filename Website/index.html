@@ -18,8 +18,8 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#hero" class="nav-logo">
-                <img src="logo.png" alt="4IER Logo" style="height: 32px; width: auto;">
+            <a href="#hero" class="nav-logo" style="font-weight: 800; font-size: 1.25rem; letter-spacing: 1px; color: var(--primary-color);">
+                4IER
             </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -38,9 +38,8 @@
     <!-- Hero Section -->
     <section class="hero" id="hero">
         <div class="hero-content">
-            <div class="hero-badge animate-on-scroll">
-                <span class="badge-dot"></span>
-                Human-Machine Interface
+            <div class="hero-logo-container animate-on-scroll" style="margin-bottom: 2rem;">
+                <img src="logo.png" alt="4IER Logo" style="height: 180px; width: auto; filter: drop-shadow(0 10px 25px rgba(56, 189, 248, 0.4)); object-fit: contain;">
             </div>
             <h1 class="hero-title animate-on-scroll">
                 <span class="title-line">HMI for Prosthetic Limb Control</span>
@@ -87,7 +86,7 @@
                 <div class="about-card animate-on-scroll" style="--delay: 0.3s">
                     <div class="card-icon">⚡</div>
                     <h3>Ultra-Low Latency</h3>
-                    <p>Complete end-to-end system delay under 50ms</p>
+                    <p>Complete end-to-end system delay under 200ms</p>
                 </div>
                 <div class="about-card animate-on-scroll" style="--delay: 0.4s">
                     <div class="card-icon">🏥</div>
@@ -110,27 +109,27 @@
                     <div class="node-number">01</div>
                     <div class="node-icon">📡</div>
                     <h3>Analog Circuit</h3>
-                    <p class="node-chip">ESP32-S3</p>
+                    <p class="node-chip">Biopotential AMP</p>
                     <ul>
-                        <li>3-ch sEMG Acquisition</li>
-                        <li>IIR Notch + FIR Filter</li>
-                        <li>Random Forest Inference</li>
-                        <li>ESP-NOW Broadcast</li>
+                        <li>3-Ch sEMG Acquisition</li>
+                        <li>AD620 Integration</li>
+                        <li>Safe Current Leakage</li>
+                        <li>Improved CMRR</li>
                     </ul>
                 </div>
                 <div class="pipeline-arrow">
                     <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    <span>ESP-NOW</span>
+                    <span>ESP32 ADC</span>
                 </div>
                 <div class="pipeline-node">
                     <div class="node-number">02</div>
                     <div class="node-icon">📶</div>
                     <h3>Signal Processing & Transmission</h3>
-                    <p class="node-chip">ESP32</p>
+                    <p class="node-chip">ESP32s with NOW</p>
                     <ul>
-                        <li>ESP-NOW Frame Capture</li>
-                        <li>Data Parsing</li>
-                        <li>UART Forwarding</li>
+                        <li>Classification</li>
+                        <li>ESP-NOW Wireless Communication</li>
+                        <li>Dual Core ESP32-S3</li>
                     </ul>
                 </div>
                 <div class="pipeline-arrow">
@@ -178,7 +177,7 @@
                 <div class="feature-card animate-on-scroll" style="--delay: 0.25s">
                     <div class="feature-number">04</div>
                     <h3>Instant Wireless Connection</h3>
-                    <p>A high-speed wireless connection ensures the robotic arm reacts to your thoughts without any noticeable delay.</p>
+                    <p>A high-speed wireless connection ensures the robotic arm reacts to your thoughts tolerable delay.</p>
                 </div>
                 <div class="feature-card animate-on-scroll" style="--delay: 0.3s">
                     <div class="feature-number">05</div>
@@ -188,7 +187,7 @@
                 <div class="feature-card animate-on-scroll" style="--delay: 0.35s">
                     <div class="feature-number">06</div>
                     <h3>Easily Trainable</h3>
-                    <p>The system can quickly learn new muscle patterns, making it highly adaptable for different users and needs.</p>
+                    <p>The system can be trained easily by turning collecting mode ON</p>
                 </div>
             </div>
         </div>
@@ -203,10 +202,10 @@
             </div>
             <div class="stats-grid animate-on-scroll">
                 <div class="stat-card">
-                    <div class="stat-value" data-target="12.5">0</div>
+                    <div class="stat-value" data-target="180">0</div>
                     <div class="stat-unit">ms</div>
                     <div class="stat-label">End-to-End Latency</div>
-                    <div class="stat-bar"><div class="stat-fill" style="--fill: 37.5%"></div></div>
+                    <div class="stat-bar"><div class="stat-fill" style="--fill: 90%"></div></div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-value" data-target="94.6">0</div>
@@ -215,16 +214,16 @@
                     <div class="stat-bar"><div class="stat-fill" style="--fill: 94.6%"></div></div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-value" data-target="0.4">0</div>
-                    <div class="stat-unit">mA</div>
+                    <div class="stat-value" data-target="5">0</div>
+                    <div class="stat-unit">μA</div>
                     <div class="stat-label">Leakage Current</div>
-                    <div class="stat-bar"><div class="stat-fill" style="--fill: 2%"></div></div>
+                    <div class="stat-bar"><div class="stat-fill" style="--fill: 50%"></div></div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-value" data-target="162">0</div>
-                    <div class="stat-unit">mW</div>
+                    <div class="stat-value" data-target="2">0</div>
+                    <div class="stat-unit">A</div>
                     <div class="stat-label">Power Consumption</div>
-                    <div class="stat-bar"><div class="stat-fill" style="--fill: 1.6%"></div></div>
+                    <div class="stat-bar"><div class="stat-fill" style="--fill: 20%"></div></div>
                 </div>
             </div>
 
@@ -242,8 +241,8 @@
                     <tbody>
                         <tr>
                             <td>End-to-End Latency</td>
-                            <td>&lt; 20 ms</td>
-                            <td>12.5 ms</td>
+                            <td>&lt; 200 ms</td>
+                            <td>180 ms</td>
                             <td><span class="status-pass">✓ PASS</span></td>
                         </tr>
                         <tr>
@@ -255,13 +254,13 @@
                         <tr>
                             <td>Safety (IEC 60601-1 BF)</td>
                             <td>&lt; 10 μA</td>
-                            <td>&lt; 10 pA</td>
+                            <td> 5 μA</td>
                             <td><span class="status-pass">✓ PASS</span></td>
                         </tr>
                         <tr>
                             <td>TX Power Budget</td>
-                            <td>&lt; 1 W</td>
-                            <td>610 mW</td>
+                            <td>&lt; 10A</td>
+                            <td>2A</td>
                             <td><span class="status-pass">✓ PASS</span></td>
                         </tr>
                     </tbody>
@@ -298,8 +297,8 @@
             <div class="docs-grid animate-on-scroll">
                 <a href="HMI_4IER.pdf" target="_blank" class="doc-card">
                     <div class="doc-icon">📄</div>
-                    <h3>Final Report</h3>
-                    <p>Complete 4IER Final Report with system architecture, test results, and compliance analysis.</p>
+                    <h3>Poster</h3>
+                    <p>Complete Project Descriptive Poster</p>
                     <span class="doc-action">Open PDF →</span>
                 </a>
                 <a href="https://github.com/gitBeraTB/HMI-For-Prosthetic-Limb-4IER" target="_blank" class="doc-card">

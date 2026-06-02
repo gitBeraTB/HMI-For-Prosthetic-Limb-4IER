@@ -19,7 +19,7 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#hero" class="nav-logo" style="font-weight: 800; font-size: 1.25rem; letter-spacing: 1px; color: var(--primary-color);">
-                4IER
+                
             </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -36,14 +36,22 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-content">
-            <div class="hero-logo-container animate-on-scroll" style="margin-bottom: 2rem;">
-                <img src="logo.png" alt="4IER Logo" style="height: 180px; width: auto; filter: drop-shadow(0 10px 25px rgba(56, 189, 248, 0.4)); object-fit: contain;">
+    <section class="hero" id="hero" style="position: relative; overflow: hidden;">
+        <!-- Electrical Wave Background -->
+        <div class="hero-bg-wave" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.04; pointer-events: none; z-index: 0; display: flex; align-items: center;">
+            <svg width="100%" height="100%" viewBox="0 0 1000 200" preserveAspectRatio="none">
+                <!-- An EMG/ECG style repeating electrical signal path -->
+                <path d="M0,100 L150,100 L170,100 L180,80 L190,120 L210,30 L230,150 L250,90 L260,100 L350,100 L370,100 L380,70 L390,130 L410,20 L430,160 L450,80 L460,100 L600,100 L620,100 L630,70 L640,140 L660,10 L680,180 L700,80 L710,100 L850,100 L870,100 L880,70 L890,120 L910,40 L930,140 L950,90 L960,100 L1000,100" 
+                      fill="none" stroke="#ffffff" stroke-width="3" vector-effect="non-scaling-stroke" style="filter: drop-shadow(0 0 8px #ffffff);"/>
+            </svg>
+        </div>
+        
+        <div class="hero-content" style="position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;">
+            <div class="hero-logo-container animate-on-scroll" style="margin-bottom: 2rem; display: flex; justify-content: center; align-items: center; width: 100%;">
+                <img src="logo.png" alt="4IER Logo" style="height: 180px; width: auto; filter: drop-shadow(0 10px 25px rgba(56, 189, 248, 0.4)); object-fit: contain; border-radius: 12px;">
             </div>
             <h1 class="hero-title animate-on-scroll">
                 <span class="title-line">HMI for Prosthetic Limb Control</span>
-                <span class="title-line gradient-text">Created by 4IER</span>
             </h1>
             <p class="hero-subtitle animate-on-scroll">
                 Wireless Human-Machine Interface for Prosthetic Arm 
@@ -147,6 +155,13 @@
                         <li>Servo Motor Control</li>
                     </ul>
                 </div>
+            </div>
+            
+            <div class="robot-arm-showcase animate-on-scroll" style="margin-top: 80px; text-align: center; position: relative;">
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 350px; height: 350px; background: var(--gradient-main); filter: blur(120px); opacity: 0.25; z-index: 0;"></div>
+                <img src="robot_arm.png" alt="Prosthetic Robotic Arm" style="max-width: 100%; height: auto; max-height: 500px; position: relative; z-index: 1; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.6));">
+                <h3 style="margin-top: 30px; font-size: 2rem;">Custom 3D-Printed <span class="gradient-text">Prosthetic Arm</span></h3>
+                <p style="color: var(--text-secondary); max-width: 600px; margin: 15px auto 0; font-size: 1.1rem; line-height: 1.6;">Our physical mechanical design is fully actuated using micro-servos. It is controlled precisely by the STM32, which generates PWM signals translated directly from the classified EMG patterns.</p>
             </div>
         </div>
     </section>

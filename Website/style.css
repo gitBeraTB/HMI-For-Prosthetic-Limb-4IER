@@ -751,8 +751,8 @@ td {
 }
 
 .team-avatar {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background: var(--gradient-main);
     display: flex;
@@ -762,6 +762,13 @@ td {
     font-size: 1.1rem;
     margin: 0 auto 16px;
     color: white;
+    overflow: hidden;
+}
+
+.team-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .team-card h4 {
